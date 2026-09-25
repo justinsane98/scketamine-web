@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>South Carolina Ketamine Centers — Charleston &amp; Columbia</title>
+<meta name="description" content="Ketamine treatment for depression, anxiety, PTSD and chronic pain at two South Carolina locations: Mount Pleasant and Columbia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Both clinic sites set Montserrat on white with a single accent each, so
+     this inherits that rather than inventing a third identity. The only thing
+     this page adds is the pairing: one page where the two accents sit side by
+     side, which is the whole job of a chooser. */
+  :root{
+    --ink:#212529;          /* Charleston's body colour */
+    --slate:#5d6b73;
+    --line:#e3e8ea;
+    --paper:#ffffff;
+    --chs:#30A9DD;          /* Charleston blue */
+    --chs-deep:#1F7CA8;
+    --cae:#6EA595;          /* Columbia sage */
+    --cae-deep:#4A7D6E;
+    --sans:'Montserrat',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font:16px/1.6 var(--sans); -webkit-font-smoothing:antialiased;
+    display:flex; flex-direction:column;
+  }
+
+  .wrap{width:100%; max-width:980px; margin:0 auto; padding:0 24px}
+
+  header{padding:56px 0 0; text-align:center}
+  h1{
+    font-size:clamp(21px,3.2vw,28px); font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; margin:0 0 10px; line-height:1.25;
+    text-wrap:balance;
+  }
+  .sub{
+    color:var(--slate); font-size:clamp(14px,1.7vw,16px); margin:0 auto;
+    max-width:36ch; line-height:1.5;
+  }
+
+  main{flex:1; display:flex; align-items:center; padding:40px 0 48px}
+  .choices{
+    display:grid; gap:22px; width:100%;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  }
+
+  /* Each card wears its own clinic's colour. The accent is the only thing that
+     differs between them, which is exactly how the two sites differ. */
+  .clinic{
+    display:flex; flex-direction:column; align-items:center; text-align:center;
+    gap:16px; padding:34px 28px 30px; color:inherit;
+    background:var(--paper);
+    border:1px solid var(--line); border-top:4px solid var(--accent);
+    border-radius:6px;
+    transition:box-shadow .16s ease, transform .16s ease, border-color .16s ease;
+  }
+  .clinic.chs{--accent:var(--chs); --accent-deep:var(--chs-deep)}
+  .clinic.cae{--accent:var(--cae); --accent-deep:var(--cae-deep)}
+  .clinic:hover,.clinic:focus-within{
+    box-shadow:0 8px 26px rgba(33,37,41,.11); transform:translateY(-2px);
+    border-color:var(--accent);
+  }
+  /* Two actions per card: call, or open the site. Both are real links, so both
+     are tappable and both are reachable by keyboard - which the single big
+     anchor this replaces could not manage, because an anchor cannot contain
+     another one and the phone number is the thing a phone should be able to
+     dial. */
+  .acts{display:flex; flex-direction:column; align-items:center; gap:12px;
+    margin-top:2px}
+  .clinic a:focus-visible{outline:3px solid var(--accent); outline-offset:3px;
+    border-radius:3px}
+
+  .clinic img{width:100%; max-width:252px; height:auto; display:block}
+
+  .where{
+    font-style:normal; color:var(--slate); font-size:14.5px; line-height:1.55;
+  }
+  .where b{display:block; color:var(--ink); font-weight:600; font-size:15px;
+    margin-bottom:3px}
+
+  .tel{
+    font-size:18px; font-weight:600; color:var(--accent-deep);
+    text-decoration:none; letter-spacing:.01em;
+  }
+  .tel:hover{text-decoration:underline}
+
+  .go{
+    font-size:12.5px; font-weight:600; letter-spacing:.09em;
+    text-transform:uppercase; color:#fff; background:var(--accent-deep);
+    text-decoration:none; padding:10px 20px; border-radius:4px;
+    display:inline-flex; align-items:center; gap:8px;
+    transition:background .16s ease;
+  }
+  .go:hover{background:var(--accent)}
+  .go svg{transition:transform .16s ease}
+  .go:hover svg{transform:translateX(3px)}
+
+  footer{
+    border-top:1px solid var(--line); padding:20px 0 28px; text-align:center;
+    color:var(--slate); font-size:12.5px;
+  }
+  footer a{color:var(--slate)}
+
+  @media (prefers-reduced-motion:reduce){
+    .clinic,.go svg{transition:none}
+    .clinic:hover{transform:none}
+  }
+  @media (max-width:640px){
+    header{padding-top:40px}
+    main{padding:28px 0 36px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>South Carolina Ketamine Centers</h1>
+    <p class="sub">Choose the clinic nearest you.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="choices">
+
+      <div class="clinic chs">
+        <img src="img/charleston.png"
+             alt="Charleston Ketamine Center" width="1000" height="251">
+        <address class="where">
+          <b>Mount Pleasant</b>
+          570 Long Point Rd, Suite 150<br>
+          Mt. Pleasant, SC 29464
+        </address>
+        <div class="acts">
+          <a class="tel" href="tel:+18434802273">(843) 480-2273</a>
+          <a class="go" href="https://charlestonketaminecenter.com">Visit site
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="none"
+                 stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                 stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 8h9M8.5 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="clinic cae">
+        <img src="img/columbia.png"
+             alt="Columbia Ketamine Center" width="1000" height="251">
+        <address class="where">
+          <b>Columbia</b>
+          2601 Laurel St, Suite 120<br>
+          Columbia, SC 29204
+        </address>
+        <div class="acts">
+          <a class="tel" href="tel:+18032507171">(803) 250-7171</a>
+          <a class="go" href="https://columbiaketamineclinic.com">Visit site
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="none"
+                 stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                 stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 8h9M8.5 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    Staff sign-in: <a href="https://app.scketamine.com">app.scketamine.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
