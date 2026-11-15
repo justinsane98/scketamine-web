@@ -43,9 +43,17 @@ Both clinic sites already set **Montserrat on white** and differ only by accent:
 | | |
 |---|---|
 | Charleston | `#30A9DD` |
-| Columbia | `#6EA595` |
+| Columbia | `#003865` palmetto blue (was the site's sage `#6EA595`) |
 
-This page uses both, one per card, which is the whole job of a chooser. The
+This page uses both, one per card, which is the whole job of a chooser.
+Columbia moved to palmetto blue on 2026-11-15, at Justin's request, to match the
+clinic app's site strip; its wordmark's waves are blue already.
+
+**patiently.cc carries a copy of this page** under the brand name Patiently
+LLC, served by the clinic app (`admin/templates/patient_home.html` and
+`admin/static/site/` in the ckc repository), with the privacy policy and text
+terms in its footer where this page has staff sign-in. Change one, change the
+other. The
 wordmarks are the clinics' own, **copied in rather than hotlinked** — a redesign
 on either site should not be able to break this page.
 
